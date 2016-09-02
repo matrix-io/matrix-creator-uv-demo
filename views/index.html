@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MATRIX Creator</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
+    <script src="js/liquidFillGauge.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- Navigation -->
+      <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="index.html">MATRIX Creator</a>
+        </div>
+        <!-- Sidebar Menu Items - These collapse to the responsive navigation menu on small screens -->
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+          <ul class="nav navbar-nav side-nav">
+            <li class="active">
+              <a href="index.html">Inicio</a>
+            </li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </nav>
+      <div id="page-wrapper">
+        <div class="container-fluid">
+        <div class="row">
+                    <div class="col-lg-12">
+                        <h1 class="page-header">
+                            MATRIX Creator Dashboard
+                        </h1>
+                        <ol class="breadcrumb">
+                            <li>
+                              <a href="index.html" class="active">Inicio</a>
+                            </li>
+                        </ol>
+                    </div>
+                </div>       
+        
+        
+          <!-- /.row -->
+          <div class="row">
+                    <div class="col-lg-4">
+                       <svg id="fillgauge2" width="80%" height="80%"  class="center-block" alt="Responsive image"></svg>
+                    </div>
+                   <div class="col-lg-2">
+                        <h2>UV Index </h2>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#000;color:#FFF"> UV Index </th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#3EA72D;color:#FFF"> Low</th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#FFF300;color:#FFF"> Moderate </th>
+                                </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#F18B00;color:#FFF"> High </th>
+                                </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#E6310F;color:#FFF"> Very High </th>
+                                    </tr>
+                                </thead>
+                                <thead>
+                                    <tr>
+                                        <th style="text-align:center;background-color:#B467A3;color:#FFF"> Extreme </th>
+                                   </tr>
+                                </thead>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+           </div>
+      </div>
+      <!-- /#page-wrapper -->
+    </div>
+    <!-- /#wrapper -->
+  </body>
+</html>
+
