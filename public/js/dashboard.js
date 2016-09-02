@@ -95,7 +95,7 @@ socket.on('update-uv', function(data) {
    point;
    if (chart) {
       point = chart.series[0].points[0];
-      point.update(data.uv_index.toFixed(2));
+      point.update(Math.floor(data.uv_index*100)/100);
    }
    console.log(data)
 });
