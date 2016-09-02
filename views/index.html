@@ -10,8 +10,10 @@
     <script src="js/jquery-1.11.2.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/dashboard.js"></script>
-    <script src="http://d3js.org/d3.v3.min.js" language="JavaScript"></script>
-    <script src="js/liquidFillGauge.js"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <script src="https://code.highcharts.com/modules/solid-gauge.js"></script>
+    
   </head>
   <body>
     <div id="wrapper">
@@ -55,47 +57,47 @@
         
           <!-- /.row -->
           <div class="row">
-                    <div class="col-lg-4">
-                       <svg id="fillgauge2" width="80%" height="80%"  class="center-block" alt="Responsive image"></svg>
-                    </div>
-                   <div class="col-lg-2">
-                        <h2>UV Index </h2>
-                        <div class="table-responsive">
-                            <table class="table table-bordered table-hover">
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#000;color:#FFF"> UV Index </th>
-                                    </tr>
-                                </thead>
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#3EA72D;color:#FFF"> Low</th>
-                                    </tr>
-                                </thead>
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#FFF300;color:#FFF"> Moderate </th>
+                <div class="col-lg-4">
+                    <div id="container-uv" style="width: 300px; height: 200px; float: left"></div>
+                </div>
+               <div class="col-lg-4">
+                    <h2 style="text-align:center;"> UV Index </h2>
+
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#000;color:#FFF"> UV Index </th>
                                 </tr>
-                                </thead>
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#F18B00;color:#FFF"> High </th>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#3EA72D;color:#FFF"> Low </th>
                                 </tr>
-                                </thead>
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#E6310F;color:#FFF"> Very High </th>
-                                    </tr>
-                                </thead>
-                                <thead>
-                                    <tr>
-                                        <th style="text-align:center;background-color:#B467A3;color:#FFF"> Extreme </th>
-                                   </tr>
-                                </thead>
-                                </tbody>
-                            </table>
-                        </div>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#FFF300;color:#FFF"> Moderate </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#F18B00;color:#FFF"> High </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#E6310F;color:#FFF"> Very High </th>
+                                </tr>
+                            </thead>
+                            <thead>
+                                <tr>
+                                    <th style="text-align:center;background-color:#B467A3;color:#FFF"> Extreme </th>
+                                </tr>
+                            </thead>
+                        </table>
                     </div>
+                </div>
            </div>
       </div>
       <!-- /#page-wrapper -->
@@ -103,4 +105,3 @@
     <!-- /#wrapper -->
   </body>
 </html>
-
