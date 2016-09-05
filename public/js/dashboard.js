@@ -1,3 +1,8 @@
+/*
+ * Copyright 2016 <Admobilize>
+ * All rights reserved.
+ */
+
 var socket = io();
 // Flot Line Chart with Tooltips
 

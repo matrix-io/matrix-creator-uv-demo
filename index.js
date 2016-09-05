@@ -1,4 +1,8 @@
-// require Express and Socket.io
+/*
+ * Copyright 2016 <Admobilize>
+ * All rights reserved.
+ */
+
 var express = require('express');
 var app = express();
 var http = require('http').Server(app);
@@ -8,14 +12,8 @@ var uv_proto = require('./test_uv.js')
 
 app.set('port', (process.env.PORT || 5000));
 
-// serve the static assets (js/dashboard.js and css/dashboard.css)
-// from the public/ directory
 app.use(express.static(path.join(__dirname, 'public/')));
 
-// serve the index.html page when someone visits any of the following endpoints:
-//    1. /
-//    2. /about
-//    3. /contact
 app.get(/\/(about|contact)?$/, function(req, res) {
   res.sendFile(path.join(__dirname, 'views/index.html'));
 });

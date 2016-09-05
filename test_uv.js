@@ -1,3 +1,9 @@
+/*
+ * Copyright 2016 <Admobilize>
+ * All rights reserved.
+ */
+
+
 // Warning! This is returning 0's.
 // Missing low level logic. We're on it.
 
