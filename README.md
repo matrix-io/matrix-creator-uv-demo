@@ -76,6 +76,9 @@ Message received: UV error: 0, Invalid configuration for UV driver.
 { uv_index: 0.08567603677511215, oms_risk: 'Low' }
 { uv_index: 0.08567603677511215, oms_risk: 'Low' }
 ```
+Now WEB APlication are running on Raspberry Pi in its local host. Load it in you web browser in 5000 port.
 
  [![UV Sensor on MATRIX Creator
 ](http://img.youtube.com/vi/SxMV310rImE/0.jpg)](https://www.youtube.com/watch?v=SxMV310rImE)
+
+
