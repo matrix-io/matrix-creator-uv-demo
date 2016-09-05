@@ -7,11 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MATRIX Labs",
-  "license": "GPL",
+  "license": "GPL-3.0",
   "dependencies": {
     "express": "^4.14.0",
     "protobufjs": "^5.0.1",
     "socket.io": "^1.4.8",
     "zmq": "^2.15.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matrix-io/matrix-creator-uv-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matrix-io/matrix-creator-uv-demo/issues"
+  },
+  "homepage": "https://github.com/matrix-io/matrix-creator-uv-demo#readme"
 }
