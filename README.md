@@ -2,6 +2,10 @@
 
 ##Installation
 
+###Getting Started
+
+[Installing required software](https://github.com/matrix-io/matrix-creator-quickstart/wiki/2.-Getting-Started)
+
 ###Installation of MALOS
 
 Installation of Hardware abstraction layer for MATRIX Creator usable via 0MQ. 
