@@ -91,10 +91,30 @@ $(document).ready(function() {
  * @param  {Object} data UV data 
  */
 socket.on('update-uv', function(data) {
-   var chart = $('#container-uv').highcharts(),
-   point;
+   var chart = $('#container-uv').highcharts();
+   var point;
+   var color;
+   
    if (chart) {
       point = chart.series[0].points[0];
+      if (data.uv_index < 3.0) {
+        color = [62, 167, 45, 1];
+      } else if (data.uv_index < 6.0) {
+        color = [255, 243, 0, 1];
+      } else if (data.uv_index < 8.0) {
+        color = [241, 139, 0, 1];
+      } else if (data.uv_index < 11.0) {
+        color = [230, 49, 15, 1];
+      } else {
+        color = [180, 103, 163, 1];
+      }
+
+      chart.yAxis[0].stops[0].color.rgba = color;
+      chart.yAxis[0].stops[1].color.rgba = color;
+      chart.yAxis[0].stops[2].color.rgba = color;
+      chart.yAxis[0].stops[3].color.rgba = color;
+      chart.yAxis[0].stops[4].color.rgba = color;
+
       point.update(Math.floor(data.uv_index*100)/100);
    }
    console.log(data)
